@@ -1,0 +1,17 @@
+[
+    {
+        "id":"00003",
+        "email":"alberto@pagaleve.com",
+        "password":"12345"
+    },
+    {
+        "id":"00002",
+        "email":"mike@pagaleve.com",
+        "password":"12345"
+    },
+    {
+        "id":"00001",
+        "email":"henrique@pagaleve.com",
+        "password":"12345"
+    }
+]

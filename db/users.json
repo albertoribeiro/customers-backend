@@ -1,0 +1,18 @@
+[
+    {
+        "username": "ErickWendel",
+        "password": "123",
+        "email":"erick.wendel@email.com",
+        "scopes": [
+            "customers"
+        ]
+    },
+    {
+        "username": "Ronaldinho",
+        "password": "123",
+        "email":"ofenomeno@email.com",
+        "scopes": [
+            "heroes"
+        ]
+    }
+]

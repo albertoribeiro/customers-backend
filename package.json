@@ -1,0 +1,30 @@
+{
+  "name": "tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "npx sls invoke test --path test",
+    "start": "IS_LOCAL=true npx nodemon --exec sls offline start --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "serverless": "^2.41.2",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-localstack": "^0.4.32",
+    "serverless-mocha-plugin": "^1.12.0",
+    "serverless-offline": "^7.0.0"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "apollo-server-lambda": "^2.24.0",
+    "aws-sdk": "^2.907.0",
+    "dynamoose": "^2.7.3",
+    "graphql": "^15.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2"
+  }
+}
