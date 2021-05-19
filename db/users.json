@@ -1,8 +1,8 @@
 [
     {
-        "username": "ErickWendel",
+        "username": "Alberto",
         "password": "123",
-        "email":"erick.wendel@email.com",
+        "email":"alberto.r.flavio@gmail.com",
         "scopes": [
             "customers"
         ]

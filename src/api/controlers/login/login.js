@@ -8,7 +8,7 @@ const login = async event => {
         email,
         password
     } = JSON.parse(event.body)
-    // do validations!!! 
+
 
     const validUser = users.find(
         user => 
@@ -32,13 +32,13 @@ const login = async event => {
 
     const token = sign({
         user: signUser,
-        // 5 minutos
-    }, JWT_KEY, { expiresIn: '5m'})
+    }, JWT_KEY, { expiresIn: '50m'})
 
     return {
         statusCode: 200,
         body: JSON.stringify({
-            token
+            token,
+            user: validUser.email
         })
     }
 }

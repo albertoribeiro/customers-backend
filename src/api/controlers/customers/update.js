@@ -32,6 +32,7 @@ class Handler {
             return this.handlerSuccess(updatedCustomer)
         } catch (error) {
             console.log('Oops...')
+            console.log(error)
             return this.handlerError({statusCode:500})
         }
     }
