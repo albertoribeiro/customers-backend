@@ -36,6 +36,13 @@ const login = async event => {
 
     return {
         statusCode: 200,
+        headers:{
+            "Access-Control-Allow-Origin":"*",
+            "Access-Control-Allow-Headers":"*",
+            "Access-Control-Allow-Metods":"*",
+            "Accept":'*/*',
+            "Content-Type":'application/json'
+        },
         body: JSON.stringify({
             token,
             user: validUser.email

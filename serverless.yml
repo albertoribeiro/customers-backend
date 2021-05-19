@@ -92,6 +92,12 @@ resources:
           StreamViewType: NEW_AND_OLD_IMAGES
 
 functions:
+  graphql:
+    handler: src/handler.handler
+    events:
+      - http:
+          path: graphql
+          method: any
   authorizerFunc:
     handler: src/api/controlers/auth/authorizer.handler             
   login:
@@ -100,68 +106,44 @@ functions:
       - http:
           path: login
           method: post
-          cors: 
-            origin: '*'
-            headers:
-              - Content-Type
-              - X-Amz-Date
-              - Authorization
-              - X-Api-Key
-              - X-Amz-Security-Token
-              - X-Amz-User-Agent
-
-  graphql:
-    handler: src/handler.handler
-    events:
-      - http:
-          path: graphql
-          method: any
+          cors: true
   create:
     handler: src/handler.customersCreate
     events:
       - http:
           path: customers
           method: post
-          authorizer: authorizerFunc
           cors: true
+          authorizer: authorizerFunc
   readOne:
     handler: src/handler.customersReadOne
     events:
       - http:
           path: customers/{id}
           method: get
-          authorizer: authorizerFunc
           cors: true
+          authorizer: authorizerFunc
   readAll:
     handler: src/handler.customersReadAll
     events:
       - http:
           path: customers
           method: get
-          authorizer: authorizerFunc
           cors: true
+          authorizer: authorizerFunc
   delete:
     handler: src/handler.customersDelete
     events:
       - http:
           path: customers/{id}
           method: delete
-          authorizer: authorizerFunc
           cors: true
+          authorizer: authorizerFunc
   update:
     handler: src/handler.customersUpdate
     events:
       - http:
           path: customers/{id}
           method: put
-          authorizer: authorizerFunc
           cors: true
-  customer-trigger:
-    handler: src/handler.customerTrigger 
-    events:
-      - stream:
-          type: dynamodb
-          arn:
-            Fn::GetAtt:
-              - Customers
-              - StreamArn
+          authorizer: authorizerFunc

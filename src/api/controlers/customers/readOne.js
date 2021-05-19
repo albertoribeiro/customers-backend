@@ -16,6 +16,13 @@ class Handler {
     handlerSuccess(data){
         const response = {
             statusCode: 200,
+            headers:{
+                "Access-Control-Allow-Origin":"*",
+                "Access-Control-Allow-Headers":"*",
+                "Access-Control-Allow-Metods":"*",
+                "Accept":'*/*',
+                "Content-Type":'application/json'
+            },
             body: JSON.stringify(data)
         }
         return response
@@ -24,7 +31,13 @@ class Handler {
     handlerError(data){
         return {
             statusCode: data.statusCode || 501,
-            headers: { 'Content-Type': 'text/plain'},
+            headers:{
+                "Access-Control-Allow-Origin":"*",
+                "Access-Control-Allow-Headers":"*",
+                "Access-Control-Allow-Metods":"*",
+                "Accept":'*/*',
+                'Content-Type': 'text/plain'
+            },
             body: 'Couldn\'t read Items !'
         }
     }
