@@ -93,20 +93,28 @@ resources:
 
 functions:
   graphql:
-    handler: src/handler.handler
+    handler: src/graphql/handler.handler
     events:
       - http:
           path: graphql
           method: any
   authorizerFunc:
-    handler: src/api/controlers/auth/authorizer.handler             
+    handler: src/api/controllers/auth/authorizer.handler             
   login:
-    handler: src/api/controlers/login/login.handler
+    handler: src/api/controllers/login/login.handler
     events:
       - http:
           path: login
           method: post
           cors: true
+  readAll:
+    handler: src/handler.customersReadAll
+    events:
+      - http:
+          path: customers
+          method: get
+          cors: true
+          authorizer: authorizerFunc
   create:
     handler: src/handler.customersCreate
     events:
@@ -120,14 +128,6 @@ functions:
     events:
       - http:
           path: customers/{id}
-          method: get
-          cors: true
-          authorizer: authorizerFunc
-  readAll:
-    handler: src/handler.customersReadAll
-    events:
-      - http:
-          path: customers
           method: get
           cors: true
           authorizer: authorizerFunc

@@ -316,7 +316,7 @@
                 },
                 "S3Key": "serverless/pagaleve-customers/dev/1621399600727-2021-05-19T04:46:40.727Z/login.zip"
               },
-              "Handler": "src/api/controlers/login/login.handler",
+              "Handler": "src/api/controllers/login/login.handler",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-login",
               "MemorySize": 1024,
@@ -1792,7 +1792,7 @@
         "versionLogicalId": "AuthorizerFuncLambdaVersionKKjiy7IcCqW4JVoDDEPE03lDBI8WcjydmN0846aBnk"
       },
       "login": {
-        "handler": "src/api/controlers/login/login.handler",
+        "handler": "src/api/controllers/login/login.handler",
         "events": [
           {
             "http": {
