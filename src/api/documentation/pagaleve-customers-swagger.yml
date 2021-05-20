@@ -224,3 +224,10 @@ components:
             $ref: '#/components/schemas/CustomerInput'
       description: Customer object that needs to be added 
       required: true
+  securitySchemes:
+    pagaleve_auth:
+      type: apiKey
+      in: header      
+      name: Authorization  
+security:
+  - pagaleve_auth: []
