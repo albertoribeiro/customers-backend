@@ -111,7 +111,7 @@ resources:
 
 functions:
   graphql:
-    handler: src/graphql/handler.handler
+    handler: src/handler.handler
     events:
       - http:
           path: graphql
@@ -126,7 +126,7 @@ functions:
           method: post
           cors: true
   readAll:
-    handler: src/handler.customersReadAll
+    handler: src/api/handler.customersReadAll
     events:
       - http:
           path: customers
@@ -134,7 +134,7 @@ functions:
           cors: true
           authorizer: authorizerFunc
   create:
-    handler: src/handler.customersCreate
+    handler: src/api/handler.customersCreate
     events:
       - http:
           path: customers
@@ -142,7 +142,7 @@ functions:
           cors: true
           authorizer: authorizerFunc
   readOne:
-    handler: src/handler.customersReadOne
+    handler: src/api/handler.customersReadOne
     events:
       - http:
           path: customers/{id}
@@ -150,7 +150,7 @@ functions:
           cors: true
           authorizer: authorizerFunc
   delete:
-    handler: src/handler.customersDelete
+    handler: src/api/handler.customersDelete
     events:
       - http:
           path: customers/{id}
@@ -158,7 +158,7 @@ functions:
           cors: true
           authorizer: authorizerFunc
   update:
-    handler: src/handler.customersUpdate
+    handler: src/api/handler.customersUpdate
     events:
       - http:
           path: customers/{id}
