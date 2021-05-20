@@ -2,7 +2,7 @@
     {
         "id":"10001",
         "name":"Ana Santos Araujo",
-        "birthday":"06/06/1983",
+        "birthdate":"06/06/1983",
         "document":"85351346893",
         "email":"ana.santos@email.com",
         "address":"Rua E, 1040 - Maracanaú/CE",
@@ -12,7 +12,7 @@
     {
         "id":"10002",
         "name":"Renan Costa Silva",
-        "birthday":"04/04/1973",
+        "birthdate":"04/04/1973",
         "document":"15716719279",
         "email":"renan.costa@email.com",
         "address":"Rua Bandônion, 1223 - Belo Horizonte/MG",
@@ -22,7 +22,7 @@
     {
         "id":"10003",
         "name":"Júlio Cardoso Almeida",
-        "birthday":"21/01/1969",
+        "birthdate":"21/01/1969",
         "document":"92207458873",
         "email":"julio.cardoso@email.com",
         "address":"Rua Ribeirão Preto, 422 - Carapicuíba/SP",
@@ -32,7 +32,7 @@
     {
         "id":"10004",
         "name":"Leonor Barbosa Cavalcanti",
-        "birthday":"07/11/1993",
+        "birthdate":"07/11/1993",
         "document":"83183651513",
         "email":"leonor.barbosa@email.com",
         "address":"Rua São Pedro, 432 - Formosa/GO",
@@ -42,7 +42,7 @@
     {
         "id":"10005",
         "name":"Larissa Santos Souza",
-        "birthday":"22/05/1980",
+        "birthdate":"22/05/1980",
         "document":"68578498704",
         "email":"larissa.santos@email.com",
         "address":"Rua Padre Olivério Kraemer, 1448 - Rio de Janeiro/RJ",
@@ -52,7 +52,7 @@
     {
         "id":"10006",
         "name":"Aline Correia Carvalho",
-        "birthday":"12/10/1999",
+        "birthdate":"12/10/1999",
         "document":"56107263446",
         "email":"aline.correia@email.com",
         "address":"Rua Luís Domingues, 1482 - Timon/MA",

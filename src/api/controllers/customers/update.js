@@ -8,7 +8,7 @@ class Handler {
     static validator(){
         return Joi.object({
             name: Joi.string().max(100).min(5).required(),
-            birthday: Joi.string().max(12).min(10).required(),
+            birthdate: Joi.string().max(12).min(10).required(),
             document: Joi.string().max(12).min(10).required(),
             email: Joi.string().email().required(),
             address: Joi.string().max(100).min(10).required(),
@@ -45,7 +45,8 @@ class Handler {
                 "Access-Control-Allow-Headers":"*",
                 "Access-Control-Allow-Metods":"*",
                 "Accept":'*/*',
-                "Content-Type":'application/json'
+                "Content-Type":'application/json',
+                'Access-Control-Allow-Credentials': true
             },
             body: JSON.stringify(data)
         }
@@ -60,7 +61,8 @@ class Handler {
                 "Access-Control-Allow-Headers":"*",
                 "Access-Control-Allow-Metods":"*",
                 "Accept":'*/*',
-                'Content-Type': 'text/plain'
+                'Content-Type': 'text/plain',
+                'Access-Control-Allow-Credentials': true
             },
             body: 'Couldn\'t update item !'
         }

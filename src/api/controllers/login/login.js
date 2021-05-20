@@ -41,7 +41,8 @@ const login = async event => {
             "Access-Control-Allow-Headers":"*",
             "Access-Control-Allow-Metods":"*",
             "Accept":'*/*',
-            "Content-Type":'application/json'
+            "Content-Type":'application/json',
+            'Access-Control-Allow-Credentials': true
         },
         body: JSON.stringify({
             token,

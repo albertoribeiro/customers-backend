@@ -2,7 +2,7 @@ const typeDefinition  = `
     type Customer {
         id: String
         name: String
-        birthday: String
+        birthdate: String
         document: String
         email: String
         address: String
@@ -19,7 +19,7 @@ const typeDefinition  = `
 
     input CustomerUpdateInput {
         name: String!
-        birthday: String!
+        birthdate: String!
         document: String!
         email: String!
         address: String!
@@ -30,7 +30,7 @@ const typeDefinition  = `
     type Mutation {
         createCustomer(
             name: String!,
-            birthday: String!,
+            birthdate: String!,
             document: String!,
             email: String!,
             address: String!,

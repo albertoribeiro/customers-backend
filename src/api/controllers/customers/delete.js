@@ -24,7 +24,8 @@ class Handler {
                 "Access-Control-Allow-Headers":"*",
                 "Access-Control-Allow-Metods":"*",
                 "Accept":'*/*',
-                "Content-Type":'application/json'
+                "Content-Type":'application/json',
+                'Access-Control-Allow-Credentials': true
             },
             body: JSON.stringify(data)
         }
@@ -39,7 +40,8 @@ class Handler {
                 "Access-Control-Allow-Headers":"*",
                 "Access-Control-Allow-Metods":"*",
                 "Accept":'*/*',
-                'Content-Type': 'text/plain'
+                'Content-Type': 'text/plain',
+                'Access-Control-Allow-Credentials': true
             },
             body: 'Couldn\'t delete item !'
         }
