@@ -246,9 +246,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/graphql.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/graphql.zip"
               },
-              "Handler": "src/graphql/handler.handler",
+              "Handler": "src/handler.handler",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-graphql",
               "MemorySize": 1024,
@@ -280,7 +280,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/authorizerFunc.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/authorizerFunc.zip"
               },
               "Handler": "src/api/controllers/auth/authorizer.handler",
               "Runtime": "nodejs12.x",
@@ -314,7 +314,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/login.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/login.zip"
               },
               "Handler": "src/api/controllers/login/login.handler",
               "Runtime": "nodejs12.x",
@@ -348,9 +348,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/readAll.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/readAll.zip"
               },
-              "Handler": "src/handler.customersReadAll",
+              "Handler": "src/api/handler.customersReadAll",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-readAll",
               "MemorySize": 1024,
@@ -382,9 +382,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/create.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/create.zip"
               },
-              "Handler": "src/handler.customersCreate",
+              "Handler": "src/api/handler.customersCreate",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-create",
               "MemorySize": 1024,
@@ -416,9 +416,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/readOne.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/readOne.zip"
               },
-              "Handler": "src/handler.customersReadOne",
+              "Handler": "src/api/handler.customersReadOne",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-readOne",
               "MemorySize": 1024,
@@ -450,9 +450,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/delete.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/delete.zip"
               },
-              "Handler": "src/handler.customersDelete",
+              "Handler": "src/api/handler.customersDelete",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-delete",
               "MemorySize": 1024,
@@ -484,9 +484,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z/update.zip"
+                "S3Key": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z/update.zip"
               },
-              "Handler": "src/handler.customersUpdate",
+              "Handler": "src/api/handler.customersUpdate",
               "Runtime": "nodejs12.x",
               "FunctionName": "pagaleve-customers-dev-update",
               "MemorySize": 1024,
@@ -511,84 +511,84 @@
               "UpdateLogGroup"
             ]
           },
-          "GraphqlLambdaVersionLdR2b5400j3JbP8GpTtoN2eVG60Yrl840vZ0gVx8": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "GraphqlLambdaFunction"
-              },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
-            }
-          },
-          "LoginLambdaVersionhm9O5NM3BLPvNGnFbgN0CEZ91hzKRUAXunrmcFjBnfA": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "LoginLambdaFunction"
-              },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
-            }
-          },
-          "ReadAllLambdaVersionKI33qHcEhfhK7L9xYss91h9DxJqj42rhWQhA2UpYUi8": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "ReadAllLambdaFunction"
-              },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
-            }
-          },
-          "AuthorizerFuncLambdaVersion4fBJUGC7DW94qmnVkvvmakgwaisemJc2Go9YHeM7dA": {
+          "AuthorizerFuncLambdaVersiondn7RbrXYmsVmDN9S31tHpK6Q0GBXkR2pUAJqZYXBJk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AuthorizerFuncLambdaFunction"
               },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
             }
           },
-          "CreateLambdaVersionH0oyvq9HfJCE9RnjVyy2F5GDaP810cspOigOmexBuY": {
+          "LoginLambdaVersion4WRzFJdrzLQ9T9UFMcbB0bxF2p90Nvu0urRGzKVzRY": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "LoginLambdaFunction"
+              },
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
+            }
+          },
+          "GraphqlLambdaVersionSEv7yXTNg5ZGT4EBsHEd61ITAMiOsZa0v81bWJokA": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "GraphqlLambdaFunction"
+              },
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
+            }
+          },
+          "ReadAllLambdaVersionhVNSWSrB1k0iL4hKHk8YEv8gHW3BlnwIkP9wIaV1A": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "ReadAllLambdaFunction"
+              },
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
+            }
+          },
+          "CreateLambdaVersionNXcqxbU1evLVXxWbVizmlTtRYMU8SLLHODxB03Si8c": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateLambdaFunction"
               },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
             }
           },
-          "UpdateLambdaVersionzHwrVKVuJJ0eo4kA3hQ9KmNM6wnyUrjvWlbTbDXbtA": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "UpdateLambdaFunction"
-              },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
-            }
-          },
-          "DeleteLambdaVersion2WVGxTZjxwQPcJq4RXv51Z96hdWp97jkxgJkL11eoI": {
-            "Type": "AWS::Lambda::Version",
-            "DeletionPolicy": "Retain",
-            "Properties": {
-              "FunctionName": {
-                "Ref": "DeleteLambdaFunction"
-              },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
-            }
-          },
-          "ReadOneLambdaVersion4gJr3fEOtXGaR9zMZySp82w2XDcShIyOdW1W1RmMOM": {
+          "ReadOneLambdaVersionGK6sax1qdHEdRIXUHWCSTLWKFF7MwFNvkOtnw4dE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ReadOneLambdaFunction"
               },
-              "CodeSha256": "QmYXMrQ5zQtFIQLdSgo+XSmfuhS+4Sk5sYIex9ihNsU="
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
+            }
+          },
+          "UpdateLambdaVersionAq7lU5RbYKnUBZyf4dXqA0mMygRv8tye1vtBxCYVAN4": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "UpdateLambdaFunction"
+              },
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
+            }
+          },
+          "DeleteLambdaVersioneh1gIjV59x6cvUoDvZH7iwM8hsWrggwgOjl1vXBkgU": {
+            "Type": "AWS::Lambda::Version",
+            "DeletionPolicy": "Retain",
+            "Properties": {
+              "FunctionName": {
+                "Ref": "DeleteLambdaFunction"
+              },
+              "CodeSha256": "LyeSgIrcphR7uXNC2uYwlqn20tWiqg3jD2LvF18NHwg="
             }
           },
           "ApiGatewayRestApi": {
@@ -1150,7 +1150,7 @@
               "Type": "TOKEN"
             }
           },
-          "ApiGatewayDeployment1621477278215": {
+          "ApiGatewayDeployment1621546543258": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -1550,55 +1550,64 @@
               "Name": "sls-pagaleve-customers-dev-ServerlessDeploymentBucketName"
             }
           },
-          "GraphqlLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "GraphqlLambdaVersionLdR2b5400j3JbP8GpTtoN2eVG60Yrl840vZ0gVx8"
-            },
-            "Export": {
-              "Name": "sls-pagaleve-customers-dev-GraphqlLambdaFunctionQualifiedArn"
-            }
-          },
-          "LoginLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "LoginLambdaVersionhm9O5NM3BLPvNGnFbgN0CEZ91hzKRUAXunrmcFjBnfA"
-            },
-            "Export": {
-              "Name": "sls-pagaleve-customers-dev-LoginLambdaFunctionQualifiedArn"
-            }
-          },
-          "ReadAllLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "ReadAllLambdaVersionKI33qHcEhfhK7L9xYss91h9DxJqj42rhWQhA2UpYUi8"
-            },
-            "Export": {
-              "Name": "sls-pagaleve-customers-dev-ReadAllLambdaFunctionQualifiedArn"
-            }
-          },
           "AuthorizerFuncLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AuthorizerFuncLambdaVersion4fBJUGC7DW94qmnVkvvmakgwaisemJc2Go9YHeM7dA"
+              "Ref": "AuthorizerFuncLambdaVersiondn7RbrXYmsVmDN9S31tHpK6Q0GBXkR2pUAJqZYXBJk"
             },
             "Export": {
               "Name": "sls-pagaleve-customers-dev-AuthorizerFuncLambdaFunctionQualifiedArn"
             }
           },
+          "LoginLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "LoginLambdaVersion4WRzFJdrzLQ9T9UFMcbB0bxF2p90Nvu0urRGzKVzRY"
+            },
+            "Export": {
+              "Name": "sls-pagaleve-customers-dev-LoginLambdaFunctionQualifiedArn"
+            }
+          },
+          "GraphqlLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "GraphqlLambdaVersionSEv7yXTNg5ZGT4EBsHEd61ITAMiOsZa0v81bWJokA"
+            },
+            "Export": {
+              "Name": "sls-pagaleve-customers-dev-GraphqlLambdaFunctionQualifiedArn"
+            }
+          },
+          "ReadAllLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "ReadAllLambdaVersionhVNSWSrB1k0iL4hKHk8YEv8gHW3BlnwIkP9wIaV1A"
+            },
+            "Export": {
+              "Name": "sls-pagaleve-customers-dev-ReadAllLambdaFunctionQualifiedArn"
+            }
+          },
           "CreateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateLambdaVersionH0oyvq9HfJCE9RnjVyy2F5GDaP810cspOigOmexBuY"
+              "Ref": "CreateLambdaVersionNXcqxbU1evLVXxWbVizmlTtRYMU8SLLHODxB03Si8c"
             },
             "Export": {
               "Name": "sls-pagaleve-customers-dev-CreateLambdaFunctionQualifiedArn"
             }
           },
+          "ReadOneLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "ReadOneLambdaVersionGK6sax1qdHEdRIXUHWCSTLWKFF7MwFNvkOtnw4dE"
+            },
+            "Export": {
+              "Name": "sls-pagaleve-customers-dev-ReadOneLambdaFunctionQualifiedArn"
+            }
+          },
           "UpdateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "UpdateLambdaVersionzHwrVKVuJJ0eo4kA3hQ9KmNM6wnyUrjvWlbTbDXbtA"
+              "Ref": "UpdateLambdaVersionAq7lU5RbYKnUBZyf4dXqA0mMygRv8tye1vtBxCYVAN4"
             },
             "Export": {
               "Name": "sls-pagaleve-customers-dev-UpdateLambdaFunctionQualifiedArn"
@@ -1607,19 +1616,10 @@
           "DeleteLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteLambdaVersion2WVGxTZjxwQPcJq4RXv51Z96hdWp97jkxgJkL11eoI"
+              "Ref": "DeleteLambdaVersioneh1gIjV59x6cvUoDvZH7iwM8hsWrggwgOjl1vXBkgU"
             },
             "Export": {
               "Name": "sls-pagaleve-customers-dev-DeleteLambdaFunctionQualifiedArn"
-            }
-          },
-          "ReadOneLambdaFunctionQualifiedArn": {
-            "Description": "Current Lambda function version",
-            "Value": {
-              "Ref": "ReadOneLambdaVersion4gJr3fEOtXGaR9zMZySp82w2XDcShIyOdW1W1RmMOM"
-            },
-            "Export": {
-              "Name": "sls-pagaleve-customers-dev-ReadOneLambdaFunctionQualifiedArn"
             }
           },
           "ServiceEndpoint": {
@@ -1784,7 +1784,7 @@
     "pluginsData": {},
     "functions": {
       "graphql": {
-        "handler": "src/graphql/handler.handler",
+        "handler": "src/handler.handler",
         "events": [
           {
             "http": {
@@ -1802,7 +1802,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "GraphqlLambdaVersionLdR2b5400j3JbP8GpTtoN2eVG60Yrl840vZ0gVx8"
+        "versionLogicalId": "GraphqlLambdaVersionSEv7yXTNg5ZGT4EBsHEd61ITAMiOsZa0v81bWJokA"
       },
       "authorizerFunc": {
         "handler": "src/api/controllers/auth/authorizer.handler",
@@ -1815,7 +1815,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AuthorizerFuncLambdaVersion4fBJUGC7DW94qmnVkvvmakgwaisemJc2Go9YHeM7dA"
+        "versionLogicalId": "AuthorizerFuncLambdaVersiondn7RbrXYmsVmDN9S31tHpK6Q0GBXkR2pUAJqZYXBJk"
       },
       "login": {
         "handler": "src/api/controllers/login/login.handler",
@@ -1855,10 +1855,10 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "LoginLambdaVersionhm9O5NM3BLPvNGnFbgN0CEZ91hzKRUAXunrmcFjBnfA"
+        "versionLogicalId": "LoginLambdaVersion4WRzFJdrzLQ9T9UFMcbB0bxF2p90Nvu0urRGzKVzRY"
       },
       "readAll": {
-        "handler": "src/handler.customersReadAll",
+        "handler": "src/api/handler.customersReadAll",
         "events": [
           {
             "http": {
@@ -1903,10 +1903,10 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ReadAllLambdaVersionKI33qHcEhfhK7L9xYss91h9DxJqj42rhWQhA2UpYUi8"
+        "versionLogicalId": "ReadAllLambdaVersionhVNSWSrB1k0iL4hKHk8YEv8gHW3BlnwIkP9wIaV1A"
       },
       "create": {
-        "handler": "src/handler.customersCreate",
+        "handler": "src/api/handler.customersCreate",
         "events": [
           {
             "http": {
@@ -1951,10 +1951,10 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "CreateLambdaVersionH0oyvq9HfJCE9RnjVyy2F5GDaP810cspOigOmexBuY"
+        "versionLogicalId": "CreateLambdaVersionNXcqxbU1evLVXxWbVizmlTtRYMU8SLLHODxB03Si8c"
       },
       "readOne": {
-        "handler": "src/handler.customersReadOne",
+        "handler": "src/api/handler.customersReadOne",
         "events": [
           {
             "http": {
@@ -1999,10 +1999,10 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "ReadOneLambdaVersion4gJr3fEOtXGaR9zMZySp82w2XDcShIyOdW1W1RmMOM"
+        "versionLogicalId": "ReadOneLambdaVersionGK6sax1qdHEdRIXUHWCSTLWKFF7MwFNvkOtnw4dE"
       },
       "delete": {
-        "handler": "src/handler.customersDelete",
+        "handler": "src/api/handler.customersDelete",
         "events": [
           {
             "http": {
@@ -2047,10 +2047,10 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "DeleteLambdaVersion2WVGxTZjxwQPcJq4RXv51Z96hdWp97jkxgJkL11eoI"
+        "versionLogicalId": "DeleteLambdaVersioneh1gIjV59x6cvUoDvZH7iwM8hsWrggwgOjl1vXBkgU"
       },
       "update": {
-        "handler": "src/handler.customersUpdate",
+        "handler": "src/api/handler.customersUpdate",
         "events": [
           {
             "http": {
@@ -2095,7 +2095,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "UpdateLambdaVersionzHwrVKVuJJ0eo4kA3hQ9KmNM6wnyUrjvWlbTbDXbtA"
+        "versionLogicalId": "UpdateLambdaVersionAq7lU5RbYKnUBZyf4dXqA0mMygRv8tye1vtBxCYVAN4"
       }
     },
     "resources": {
@@ -2189,7 +2189,7 @@
       "package": {
         "excludeDevDependencies": true,
         "individually": true,
-        "artifactDirectoryName": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z"
+        "artifactDirectoryName": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z"
       },
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
@@ -2208,7 +2208,7 @@
   },
   "package": {
     "individually": true,
-    "artifactDirectoryName": "serverless/pagaleve-customers/dev/1621477452959-2021-05-20T02:24:12.959Z",
+    "artifactDirectoryName": "serverless/pagaleve-customers/dev/1621546625505-2021-05-20T21:37:05.505Z",
     "artifact": ""
   }
 }
